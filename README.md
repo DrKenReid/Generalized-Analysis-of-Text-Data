@@ -1,85 +1,48 @@
-# 📊 Generalized Analysis of Text Data
+# Generalized Analysis of Text Data
 
-## 🔍 Overview
-This repo provides a comprehensive toolkit for analyzing text data using various AI and Natural Language Processing (NLP) techniques. It's designed to be a reference guide and inspiration for text analysis projects, offering insights into themes, sentiment, named entities, and more.
+A comprehensive reference notebook demonstrating a wide range of NLP and text analysis techniques on the [20 Newsgroups](https://scikit-learn.org/stable/datasets/real_world.html#newsgroups-dataset) dataset. Designed as both a learning resource and a reusable template for new text analysis projects.
 
-## ✨ Features
-- **📥 Data Collection**: Uses the 20 Newsgroups dataset for demonstration.
-- **📝 Initial Textual Analysis**: Performs basic text statistics and word frequency analysis.
-- **🔬 Exploratory Data Analysis**: Visualizes key aspects of the text data.
-- **🗂️ Topic Modeling**: Uncovers hidden thematic structures in the text corpus.
-- **🧩 Text Clustering**: Groups similar documents using K-means clustering.
-- **🔤 Word Embeddings**: Captures semantic relationships between words using Word2Vec.
-- **🔗 Document Similarity**: Identifies related documents using cosine similarity.
-- **🏷️ Named Entity Recognition**: Extracts and classifies named entities in the text.
-- **🕸️ Topic Network Visualization**: Visualizes relationships between topics and words.
-- **😊 Sentiment Analysis**: Analyzes the emotional tone of the text.
-- **📚 Text Classification**: Automatically categorizes texts using machine learning.
-- **📝 Text Summarization**: Generates concise summaries of longer texts.
-- **🔠 POS Tagging**: Assigns parts of speech to words in the text.
-- **🌳 Dependency Parsing**: Analyzes the grammatical structure of sentences.
-- **🧐 Topic Coherence**: Evaluates the quality of extracted topics.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DrKenReid/Generalized-Analysis-of-Text-Data/blob/main/Generalized_Analysis_of_Text_Data.ipynb)
 
-## 🛠️ Requirements
-- Python 3.6+
-- Required libraries: 
-  - pandas
-  - numpy
-  - matplotlib
-  - seaborn
-  - nltk
-  - spacy
-  - textblob
-  - scikit-learn
-  - gensim
-  - networkx
-  - transformers
+## Techniques Demonstrated
 
-## 🚀 Installation
-1. Clone this repository:
-   ```
-   git clone https://github.com/DrKenReid/Generalized-Analysis-of-Text-Data.git
-   ```
-2. Install required packages:
-   ```
-   pip install -r requirements.txt
-   ```
+| Category | Details |
+|---|---|
+| **Data Wrangling** | 20 Newsgroups ingestion, Pandas dataset construction, text statistics |
+| **Text Preprocessing** | Tokenisation, stopword removal (NLTK + extended list), lemmatisation |
+| **Exploratory Analysis** | Word frequency distributions, category-level box plots |
+| **Topic Modelling** | Latent Dirichlet Allocation (LDA) with scikit-learn |
+| **Clustering** | K-Means on TF-IDF vectors, t-SNE and PCA visualisation |
+| **Word Embeddings** | Word2Vec training, similarity queries, 2-D projection |
+| **Document Similarity** | Cosine similarity on TF-IDF representations |
+| **NER** | spaCy named-entity recognition with entity-type frequency analysis |
+| **Sentiment Analysis** | NLTK VADER and TextBlob, category-level sentiment comparison |
+| **Text Classification** | Logistic Regression on TF-IDF features with accuracy reporting |
+| **Summarisation** | Hugging Face Transformers summarisation pipeline |
+| **Dependency Parsing** | spaCy POS tagging and dependency visualisation |
+| **Topic Coherence** | Gensim coherence scores for LDA evaluation |
 
-## 👨‍💻 Usage
-1. Open the notebook in Google Colab or your preferred Jupyter environment.
-2. Run all cells in the notebook:
-   - In Colab: Runtime -> Run all
-   - In Jupyter: Cell -> Run All
+## How to Use
 
-## 📑 Sections
-1. Setup: Imports necessary libraries and initializes key components.
-2. Data Collection: Fetches the 20 Newsgroups dataset.
-3. Dataset Building: Structures the data into a pandas DataFrame.
-4. Initial Textual Analysis: Performs basic text statistics.
-5. Exploratory Data Analysis: Visualizes key aspects of the data.
-6. AI-Enhanced Insights: Applies various NLP techniques for deeper analysis.
+1. Open the notebook in Google Colab via the badge above.
+2. Run all cells (**Runtime → Run all**). No data upload is needed — the 20 Newsgroups dataset is fetched automatically.
+3. To analyse your own text data, replace the `collect_data()` call with a function that returns a list of documents, category labels, and category names in the same format.
 
-## 📤 Output
-The notebook generates various visualizations and outputs, including:
-- Word frequency distributions
-- Topic models
-- Cluster visualizations
-- Sentiment analysis results
-- Named entity recognition results
-- Text summaries
+## Example Outputs
 
-## 🔧 Customization
-You can modify the notebook to use your own dataset by replacing the data collection step with your data loading process.
+| | |
+|---|---|
+| ![Top 20 Most Frequent Words](img/plot_1.png) | ![Word Count by Category](img/plot_2.png) |
+| ![LDA Topics](img/plot_3.png) | ![Text Clustering (t-SNE)](img/plot_4.png) |
+| ![Word Embeddings (PCA)](img/plot_5.png) | ![Document Similarity Heatmap](img/plot_6.png) |
+| ![Named Entities](img/plot_7.png) | ![Topic Network](img/plot_8.png) |
+| ![Sentiment by Category](img/plot_9.png) | ![POS Tag Distribution](img/plot_10.png) |
+| ![Dependency Parse](img/plot_11.png) | ![Topic Coherence](img/plot_12.png) |
 
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/DrKenReid/Generalized-Analysis-of-Text-Data/issues) if you want to contribute.
+## A Note on Generality
 
-## 📄 License
-This project is licensed under the MIT License.
+Every technique in this notebook is deliberately context-agnostic. The 20 Newsgroups dataset is used purely as a convenient, well-understood benchmark — swap it for customer reviews, research abstracts, social media posts, or any other corpus and the analysis pipeline applies unchanged. The real value is in the workflow: start broad with frequency analysis, narrow down with topic modelling and clustering, then layer on entity recognition, sentiment, and classification as the questions demand.
 
-## 🙏 Acknowledgements
-- This project uses the 20 Newsgroups dataset for demonstration purposes.
-- Special thanks to the developers of the various Python libraries used in this project.
+## License
 
-## ⚖️ Disclaimer
-This notebook is for educational and research purposes only. Ensure you have the right to use and analyze any data you input into this notebook.
+This project is licensed under [CC BY 4.0](LICENSE).
