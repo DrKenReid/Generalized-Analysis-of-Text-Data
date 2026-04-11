@@ -46,3 +46,17 @@ Every technique in this notebook is deliberately context-agnostic. The 20 Newsgr
 ## License
 
 This project is licensed under [CC BY 4.0](LICENSE).
+
+## Related
+
+- [CNN X-ray Image Classifier](https://github.com/DrKenReid/CNN-Tutorial---X-ray-image-classifier) — deep learning for medical imaging
+- [VAE for Molecule Discovery](https://github.com/DrKenReid/VAE-for-Molecule-Discovery) — generative modelling for drug discovery
+- [kenreid.co.uk/data_science](https://www.kenreid.co.uk/data_science.html) — all projects, publications, and CV
+
+## Author
+
+**Ken Reid** — Data Scientist, photographer, and avid reader.
+
+- [kenreid.co.uk](https://www.kenreid.co.uk) — Portfolio & blog
+- [@kenreid.co.uk](https://bsky.app/profile/kenreid.co.uk) — Bluesky
+- [@DrKenReid](https://github.com/DrKenReid) — GitHub
