@@ -8,3 +8,5 @@ build/
 .env
 *.log
 user_options.json
+results_summary.json
+results_summary.md

@@ -21,7 +21,9 @@ For local development:
 
 ```bash
 git clone https://github.com/DrKenReid/Generalized-Analysis-of-Text-Data.git
+cd Generalized-Analysis-of-Text-Data
 pip install -r requirements.txt
+python -m spacy download en_core_web_sm
 jupyter notebook
 ```
 

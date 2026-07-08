@@ -12,13 +12,13 @@ A comprehensive reference notebook demonstrating a wide range of NLP and text an
 | **Text Preprocessing** | Tokenisation, stopword removal (NLTK + extended list), lemmatisation |
 | **Exploratory Analysis** | Word frequency distributions, category-level box plots |
 | **Topic Modelling** | Latent Dirichlet Allocation (LDA) with scikit-learn |
-| **Clustering** | K-Means on TF-IDF vectors, t-SNE and PCA visualisation |
-| **Word Embeddings** | Word2Vec training, similarity queries, 2-D projection |
+| **Clustering** | K-Means on TF-IDF vectors, silhouette-based k selection, ARI/NMI evaluation against known labels, SVD visualisation |
+| **Word Embeddings** | Word2Vec training, similarity queries, t-SNE projection |
 | **Document Similarity** | Cosine similarity on TF-IDF representations |
 | **NER** | spaCy named-entity recognition with entity-type frequency analysis |
-| **Sentiment Analysis** | NLTK VADER and TextBlob, category-level sentiment comparison |
-| **Text Classification** | Logistic Regression on TF-IDF features with accuracy reporting |
-| **Summarisation** | Hugging Face Transformers summarisation pipeline |
+| **Sentiment Analysis** | TextBlob polarity and NLTK VADER compound scores, category-level comparison |
+| **Text Classification** | Multi-model comparison (Logistic Regression, Naive Bayes, Random Forest, Linear SVM) on TF-IDF features |
+| **Summarisation** | Abstractive summarisation with DistilBART (Hugging Face Transformers) |
 | **Dependency Parsing** | spaCy POS tagging and dependency visualisation |
 | **Topic Coherence** | Gensim coherence scores for LDA evaluation |
 
@@ -32,12 +32,13 @@ A comprehensive reference notebook demonstrating a wide range of NLP and text an
 
 | | |
 |---|---|
-| ![Top 20 Most Frequent Words](img/plot_1.png) | ![Word Count by Category](img/plot_2.png) |
-| ![LDA Topics](img/plot_3.png) | ![Text Clustering (t-SNE)](img/plot_4.png) |
-| ![Word Embeddings (PCA)](img/plot_5.png) | ![Document Similarity Heatmap](img/plot_6.png) |
-| ![Named Entities](img/plot_7.png) | ![Topic Network](img/plot_8.png) |
-| ![Sentiment by Category](img/plot_9.png) | ![POS Tag Distribution](img/plot_10.png) |
-| ![Dependency Parse](img/plot_11.png) | ![Topic Coherence](img/plot_12.png) |
+| ![Top 20 Most Frequent Words](img/01_word_frequency.png) | ![Word Count by Category](img/02_word_count_by_category.png) |
+| ![LDA Topic Top Words](img/03_topic_top_words.png) | ![Topic Distribution Across Documents](img/04_topic_distribution.png) |
+| ![Document Clusters](img/05_document_clusters.png) | ![Word Embeddings (t-SNE)](img/06_word_embeddings.png) |
+| ![Document Similarity Heatmap](img/07_document_similarity.png) | ![Named Entity Types](img/08_ner_type_distribution.png) |
+| ![Top Named Entities](img/09_top_named_entities.png) | ![Topic Network](img/10_topic_network.png) |
+| ![Sentiment Distribution](img/11_sentiment_distribution.png) | ![Sentiment by Category](img/12_sentiment_by_category.png) |
+| ![Document Length vs Sentiment](img/13_length_vs_sentiment.png) | |
 
 ## A Note on Generality
 
@@ -45,7 +46,7 @@ Every technique in this notebook is deliberately context-agnostic. The 20 Newsgr
 
 ## License
 
-This project is licensed under [CC BY 4.0](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ## Related
 
